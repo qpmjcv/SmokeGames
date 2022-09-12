@@ -50,3 +50,4 @@ const cargarJuegos = async() => {
 
 cargarJuegos();
 
+const renderDetails = '';
