@@ -1,6 +1,4 @@
-{
-
-  "posts": [
+const datos = [
 
     {
       "id": 1,
@@ -25,7 +23,7 @@
       "tags": "Fútbol",
       "multiplayer": true
     },
-
+  
     {
       "id": 3,
       "title": "NBA 2K22",
@@ -37,7 +35,7 @@
       "tags": "Deportes, Baloncesto, Simulación, Realistas",
       "multiplayer": true
     },
-
+  
     {
       "id": 4,
       "title": "Marvel Spider-Man",
@@ -49,7 +47,7 @@
       "tags": "Super héroes, Acción, Mundo abierto, Un jugador",
       "multiplayer": false
     },
-
+  
     {
       "id": 5,
       "title": "Red Dead Redemption 2",
@@ -61,7 +59,7 @@
       "tags": "Mundo abierto, Buena trama, Aventura, Vaqueros",
       "multiplayer": true
     },
-
+  
     {
       "id": 6,
       "title": "ELDEN RING",
@@ -73,7 +71,7 @@
       "tags": "Tipo «Dark Souls», Relajantes, Fantasía oscura",
       "multiplayer": false
     },
-
+  
     {
       "id": 7,
       "title": "Destiny 2",
@@ -85,7 +83,7 @@
       "tags": "Free to Play, Mundo abierto, Disparos y botín, JcJ",
       "multiplayer": true
     },
-
+  
     {
       "id": 8,
       "title": "Grand Theft Auto V",
@@ -97,7 +95,7 @@
       "tags": "Mundo abierto, Acción, Multijugador, Crimen",
       "multiplayer": true
     },
-
+  
     {
       "id": 9,
       "title": "Titanfall® 2",
@@ -109,7 +107,7 @@
       "tags": "FPS, Multijugador, Disparos, Mechas, Acción",
       "multiplayer": true
     },
-
+  
     {
       "id": 10,
       "title": "Total War: WARHAMMER III",
@@ -121,7 +119,7 @@
       "tags": "Acceso anticipado, Estrategia, Estrategia por turnos",
       "multiplayer": true
     },
-
+  
     {
       "id": 11,
       "title": "Counter-Strike: Global Offensive",
@@ -133,7 +131,7 @@
       "tags": "FPS, Disparos, Multijugador, Competitivos, JcJ",
       "multiplayer": true
     },
-
+  
     {
       "id": 12,
       "title": "Call of Duty®: Modern Warfare® II",
@@ -145,7 +143,7 @@
       "tags": "FPS, Acción, Disparos, Multijugador, Militares",
       "multiplayer": true
     },
-
+  
     {
       "id": 13,
       "title": "RESIDENT EVIL VILLAGE",
@@ -157,7 +155,7 @@
       "tags": "Supervivencia / TerrorTerror, Primera persona",
       "multiplayer": false
     },
-
+  
     {
       "id": 14,
       "title": "Forza Horizon 5",
@@ -169,7 +167,7 @@
       "tags": "Carreras, Mundo abierto, Conducción, Aventura",
       "multiplayer": true
     },
-
+  
     {
       "id": 15,
       "title": "Stray",
@@ -180,21 +178,139 @@
       "editor": "Annapurna Interactive",
       "tags": "Gatos, Aventura, Ciberpunk, Ambientales, Indie",
       "multiplayer": false
+    },
+  
+    {
+      "id": 16,
+      "title": "Dying Light",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/239140/header.jpg?t=1659436723",
+      "description": "Juego de supervivencia ambientado en un mundo abierto postapocalíptico cubierto de zombis hambrientos. Explora una ciudad arrasada por una misteriosa epidemia vírica. Busca suministros, fabrica armas y enfréntate a hordas de muertos.",
+      "date": "26 ENE 2015",
+      "developer": "Techland",
+      "editor": "Techland",
+      "tags": "Zombis, Supervivencia / Terror, Terror, Parkour",
+      "multiplayer": false
+    },
+  
+    {
+      "id": 17,
+      "title": "DayZ",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/221100/header.jpg?t=1659598540",
+      "description": "¿Cuánto podrás sobrevivir en un mundo posapocalíptico? Es una tierra plagada de zombis infectados donde compites por recursos escasos. ¿Colaborarás con desconocidos y permaneceréis juntos? ¿O irás de lobo solitario para evitar traiciones? Esto es DayZ. Esta es tu historia.",
+      "date": "13 DIC 2018",
+      "developer": "Bohemia Interactive",
+      "editor": "Bohemia Interactive",
+      "tags": "Supervivencia, Zombis, Multijugador, Acción",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 18,
+      "title": "Rust",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg?t=1659365273",
+      "description": "The only aim in Rust is to survive. Everything wants you to die - the islands wildlife and other inhabitants, the environment, other survivors. Do whatever it takes to last another night.",
+      "date": "8 FEB 2018",
+      "developer": "Facepunch Studios",
+      "editor": "Facepunch Studios",
+      "tags": "Supervivencia, Fabricación, Multijugador, JcJ",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 19,
+      "title": "F1® 22",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/1692250/header.jpg?t=1662051802",
+      "description": "Entra en la nueva era de la Formula 1® en EA SPORTS™ F1® 22, el videojuego oficial de FIA Formula One World Championship™ 2022",
+      "date": "1 JUL 2022",
+      "developer": "Codemasters",
+      "editor": "Electronic Arts",
+      "tags": "Carreras, Deportes, Multijugador, Cooperativos",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 20,
+      "title": "Dead by Daylight",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/381210/header.jpg?t=1661894604",
+      "description": "Dead by Daylight es un juego de horror de multijugador (4 contra 1) en el que un jugador representa el rol del asesino despiadado y los 4 restantes juegan como supervivientes que intentan escapar de él para evitar ser capturados y asesinados.",
+      "date": "14 JUN 2016",
+      "developer": "Behaviour Interactive Inc.",
+      "editor": "Behaviour Interactive Inc.",
+      "tags": "Terror, Supervivencia / Terror, Multijugador, Sigilo",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 21,
+      "title": "God of War",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg?t=1650554420",
+      "description": "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.",
+      "date": "14 ENE 2022",
+      "developer": "Santa Monica Studio",
+      "editor": "PlayStation PC LLC",
+      "tags": "Acción, Aventura, Un jugador, Buena trama, 3D",
+      "multiplayer": false
+    },
+  
+    {
+      "id": 22,
+      "title": "Hogwarts Legacy",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1661535551",
+      "description": "Hogwarts Legacy es un RPG inmersivo de acción en mundo abierto. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico.",
+      "date": "10 FEB 2023",
+      "developer": "Avalanche Software",
+      "editor": "Warner Bros. Games",
+      "tags": "Aventura, Magia, Mundo abierto, Fantasía, Rol",
+      "multiplayer": false
+    },
+  
+    {
+      "id": 23,
+      "title": "Arma 3",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/107410/header.jpg?t=1655998601",
+      "description": "Combate realista en un enorme mundo abierto militar. Gran cantidad de contenido en solitario y multijugador, más de 20 vehículos y 40 armas e infinitas posibilidades de creación de contenido. El mejor juego militar para PC. Auténtico, diverso, abierto... Con Arma 3 vas a vivir la guerra.",
+      "date": "12 SEP 2013",
+      "developer": "Bohemia Interactive",
+      "editor": "Bohemia Interactive",
+      "tags": "Acción, Militares, Multijugador,Simulación FPS",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 24,
+      "title": "Hunt: Showdown",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/594650/header_alt_assets_13.jpg?t=1662450463",
+      "description": "Hunt: Showdown es un emocionante shooter de alto riesgo en primera persona para JcJcE. Elimina monstruos de pesadilla, mientras compites por las recompensas que te llevarán a alcanzar la gloria, el equipo y el oro en esta experiencia multijugador online implacable e inolvidable.",
+      "date": "27 AGO 2019",
+      "developer": "Crytek",
+      "editor": "Crytek",
+      "tags": "Mundo abierto, Tácticos, Ambientales, FPS",
+      "multiplayer": true
+    },
+  
+    {
+      "id": 25,
+      "title": "Mass Effect™ Legendary Edition",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/1328670/header.jpg?t=1662047542",
+      "description": "Mass Effect™ Legendary Edition incluye el contenido básico para un jugador y más de 40 contenidos descargables aclamados de Mass Effect, Mass Effect 2 y Mass Effect 3, además de armas, armaduras y paquetes promocionales; todo remasterizado y optimizado para 4K Ultra HD.",
+      "date": "14 MAY 2021",
+      "developer": "BioWare",
+      "editor": "Electronic Arts",
+      "tags": "Buena tramam Rol, Las elecciones importan",
+      "multiplayer": false
+    },
+  
+    {
+      "id": 26,
+      "title": "Call of Duty®: Black Ops III",
+      "url": "https://cdn.akamai.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462",
+      "description": "Call of Duty® Black Ops III: Zombies Chronicles Edition incluye el juego original completo y la expansión de contenido Zombies Chronicles.",
+      "date": "6 NOV 2015",
+      "developer": "Treyarch, Aspyr (Mac)",
+      "editor": "Activision, Aspyr (Mac)",
+      "tags": "Multijugador, FPS, Zombis, Disparos, Acción",
+      "multiplayer": true
     }
-  ],
-
-  "comments": [
-
-    { "id": 1, "body": "some comment", "postId": 1 },
-
-    { "id": 2, "body": "some comment", "postId": 1 }
-
-  ],
-
-  "profile": {
-
-    "name": "typicode"
-
-  }
-
-}
+  ];
+  
+localStorage.setItem("juegos", JSON.stringify(datos));

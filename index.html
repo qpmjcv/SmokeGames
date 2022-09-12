@@ -56,18 +56,7 @@
 
     <main>
 
-      <div class="container">
-        <div class="contenedor" id="contenedor"></div>
-
-        <div class="paginacion">
-          <button id="btnAnterior">Anterior</button>
-          <button id="btnSiguiente">Siguiente</button>
-       </div>
-      </div>
-      
-
-
-      <!-- <div class="row">
+      <div class="row">
         <div class="col">
           <div class="container mt-3">  
             <ul class="nav justify-content-center">
@@ -93,6 +82,8 @@
           </div>
         </div>
       </div>
+
+      <!--Sidebar-->
       <div class="row">
         <div class="col col-4">
           <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
@@ -135,35 +126,53 @@
             </ul>           
           </div>
         </div>
+        
+        <!--Carousel-->
         <div class="col-4">
           <div class="container">
-            <h2>Destacados</h2>
+            <h2 class="text-center">Destacados</h2>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="..." class="d-block w-100" alt="...">
+                  <img src="/assets/img/main/main-img1.png" class="d-block w-100" alt="Elden Ring">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Elden Ring</h5>
+                    <p>El nuevo juego de rol y acción de ambientación fantástica.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
+                  <img src="/assets/img/main/main-img2.jpg" class="d-block w-100" alt="NBA 2K23">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>NBA 2K23</h5>
+                    <p>Ponte a la altura de las circunstancias en NBA 2K23.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="..." class="d-block w-100" alt="...">
+                  <img src="/assets/img/main/main-img3.jpg" class="d-block w-100" alt="Forza Horizon 5">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Forza Horizon 5</h5>
+                    <p>¡La aventura Horizon definitiva te espera!</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/main/main-img4.jpg" class="d-block w-100" alt="Counter Strike Global Offensive">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Counter Strike Global Offensive</h5>
+                    <p>Amplía el juego de acción por equipos que fue pionero hace más de 20 años.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/img/main/main-img5.jpg" class="d-block w-100" alt="Marvel Spider-Man Remastered">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Marvel Spider-Man Remastered</h5>
+                    <p>Spider-Man en una historia original repleta de acción.</p>
                   </div>
                 </div>
               </div>
@@ -178,10 +187,18 @@
             </div>
           </div>
           <div class="container">
-            <h2>Lo último en videojuegos</h2>            
+            <h2 class="text-center">Lo último en videojuegos</h2>            
           </div>
         </div>        
       </div>
+
+      
+      <!--Api Render-->
+      <div class="container">
+        <div class="contenedor" id="contenedor"></div>
+      </div>
+
+      <!--NavButtons-->
       <div class="row">
         <div class="col">
           <div class="container" id="tab-container">
@@ -197,15 +214,18 @@
               </li>
             </ul>
             <div class="tab-content d-flex justify-content-center" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div> 
 
-      
+      <div class="paginacion">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+      </div>
 
     </main> 
 

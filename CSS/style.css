@@ -89,7 +89,7 @@ body{
 body {
 	font-family: 'Montserrat', sans-serif;
 	background: #201e1e;
-	color: #1d1d1d;
+	color: #fafafa;
 }
 
 .contenedor {
@@ -98,7 +98,7 @@ body {
 	margin: 40px auto 100px auto;
 
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 40px;
 }
 
@@ -119,9 +119,9 @@ body {
 }
 
 .paginacion {
-	position: fixed;
+	position: static;
 	bottom: 0;
-	background: #100a1f;
+	
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -138,7 +138,7 @@ body {
 	text-align: center;
 	height: 50px;
 	width: 200px;
-	background: #241744;
+	background: #372c54;
 	color: #fff;
 	border-radius: 100px;
 	font-family: 'Montserrat', sans-serif;

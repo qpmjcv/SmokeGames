@@ -38,8 +38,8 @@ const cargarJuegos = async() => {
 
             document.getElementById('contenedor').innerHTML = juegos;
             
-        } else if(respuesta.status === 401, 402, 404){
-            console.log('Pusiste mal el cogido');
+        } else if(respuesta.status === 401, 402, 403, 404, 405){
+            console.log('El arreglo es demasiado largo');
         }
 
     } catch(error){
