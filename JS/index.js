@@ -30,7 +30,6 @@ const cargarJuegos = async() => {
                 juegos += `
                     <div class="juego">
                         <img class="poster" src="${juego.url}">
-                        <a>"${juego.description}"</a>" 
                         <h3 class="titulo">${juego.title}</h3>
                     </div>    
                     `;
@@ -39,7 +38,7 @@ const cargarJuegos = async() => {
 
             document.getElementById('contenedor').innerHTML = juegos;
             
-        } else if(respuesta.status === 401){
+        } else if(respuesta.status === 401, 402, 404){
             console.log('Pusiste mal el cogido');
         }
 
@@ -50,4 +49,3 @@ const cargarJuegos = async() => {
 
 cargarJuegos();
 
-const renderDetails = '';
