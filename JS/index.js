@@ -1,22 +1,22 @@
-let pagina = 1;
-const btnAnterior = document.getElementById('btnAnterior');
-const btnSiguiente = document.getElementById('btnSiguiente');
+// let pagina = 1;
+// const btnAnterior = document.getElementById('btnAnterior');
+// const btnSiguiente = document.getElementById('btnSiguiente');
 
-btnSiguiente.addEventListener('click', () => {
-    if(pagina <20){
-        pagina += 1;
-        obtenerJuegos();
+// btnSiguiente.addEventListener('click', () => {
+//     if(pagina <1000){
+//         pagina += 1;
+//         obtenerJuegos();
 
-    }
-})
+//     }
+// })
 
-btnAnterior.addEventListener('click', () => {
-    if(pagina > 1){
-        pagina -= 1;
-        obtenerJuegos();
+// btnAnterior.addEventListener('click', () => {
+//     if(pagina > 1){
+//         pagina -= 1;
+//         obtenerJuegos();
 
-    }
-})
+//     }
+// })
 
 // let juegos = '';
 
