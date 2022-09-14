@@ -3,7 +3,7 @@ const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
 
 btnSiguiente.addEventListener('click', () => {
-    if(pagina <1000){
+    if(pagina <20){
         pagina += 1;
         obtenerJuegos();
 
@@ -18,34 +18,39 @@ btnAnterior.addEventListener('click', () => {
     }
 })
 
-const cargarJuegos = async() => {
-    try {
-        const respuesta = await fetch('https://my-json-server.typicode.com/qpmjcv/GamesApi/db');
-        console.log(respuesta);
-        if(respuesta.status === 200){
-            const datos = await respuesta.json();
+// let juegos = '';
 
-            let juegos = '';
-            datos.juegos.forEach(juego => {
-                juegos += `
-                    <div class="juego">
-                        <img class="poster" src="${juego.url}">
-                        <h3 class="titulo">${juego.title}</h3>
-                    </div>    
-                    `;
-                               
-            });
+// const cargarJuegos = async() => {
+//     try {
+//         const respuesta = await fetch('https://my-json-server.typicode.com/qpmjcv/GamesApi/db');
+//         console.log(respuesta);
+//         if(respuesta.status === 200){
+//             const datos = await respuesta.json();
 
-            document.getElementById('contenedor').innerHTML = juegos;
             
-        } else if(respuesta.status === 401, 402, 403, 404, 405){
-            console.log('El arreglo es demasiado largo');
-        }
+//             datos.juegos.forEach(juego => {
+//                 juegos += `
+//                     <div class="juego">
+//                        <img class="poster" src="${juego.url}">
+//                         <h3 class="titulo">${juego.title}</h3>
+//                     </div>    
+//                     `;
+                               
+//             });
 
-    } catch(error){
-        console.log(error);
-    }
-}
+//             document.getElementById('contenedor').innerHTML = juegos;
+            
+        
+        
+//         }
 
-cargarJuegos();
+//     } catch(error){
+//         console.log(error);
+//         console.log('El arreglo es demasiado largo');
+//     }
+// }
 
+// cargarJuegos();
+
+
+//https://my-json-server.typicode.com/qpmjcv/GamesApi/db
