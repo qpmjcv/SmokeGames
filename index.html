@@ -84,7 +84,7 @@
       </div>
 
       <!--Sidebar-->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col col-4">
           <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -125,10 +125,10 @@
               </li>
             </ul>           
           </div>
-        </div>
+        </div> -->
         
         <!--Carousel-->
-        <div class="col-4">
+        <div class="col-12 flex-wrap">
           <div class="container">
             <h2 class="text-center">Destacados</h2>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -187,46 +187,48 @@
             </div>
           </div>
           <div class="container">
-            <h2 class="text-center">Lo último en videojuegos</h2>            
+            <h2 class="text-center mt-3">Lo último en videojuegos</h2>            
           </div>
         </div>        
       </div>
 
       
       <!--Api Render-->
-      <div class="container">
+      <div class="card-container">
         <div class="contenedor" id="contenedor"></div>
       </div>
-
-      <!--NavButtons-->
-      <div class="row">
-        <div class="col">
-          <div class="container" id="tab-container">
-            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-              </li>
-            </ul>
-            <div class="tab-content d-flex justify-content-center" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-            </div>
-          </div>
-        </div>
-      </div> 
-
       <div class="paginacion">
         <button id="btnAnterior">Anterior</button>
         <button id="btnSiguiente">Siguiente</button>
       </div>
-
+            <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li> -->
+      <!--NavButtons-->
+      <div class="row">
+        <div class="col">
+          <div class="container mt-3" id="tab-container">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Más jugados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Más nuevos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Mejor puntuados</a>
+              </li>
+            </ul>
+            <div class="tab-content d-flex justify-content-center mt-3" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="played-tab"><div class="modal-container d-flex text-center gap-4 flex-wrap" id="modal1"></div></div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="new-tab"><div class="modal-container d-flex text-center gap-4 flex-wrap" id="modal2"></div></div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="bestrated-tab"><div class="modal-container d-flex text-center gap-4 flex-wrap" id="modal3"></div></div>
+            </div>
+          </div>
+        </div>
+      </div> 
     </main> 
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

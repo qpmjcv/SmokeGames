@@ -19,6 +19,21 @@ body{
     font-size: 11px;
 }
 
+.card-container img{
+    filter: grayscale(1);
+    border-radius: 4px;
+}
+
+.card-container img:hover{
+    filter: grayscale(0);
+    transform: scale(1.06);
+    transition: 0.7s;
+}
+
+.modal-container img{
+    width: 400px;
+}
+
 .navbar-brand{
     position: relative;
     left: 420px;
