@@ -2,6 +2,10 @@
 // const btnAnterior = document.getElementById('btnAnterior');
 // const btnSiguiente = document.getElementById('btnSiguiente');
 const juegos = JSON.parse(localStorage.getItem('juegos')) || [];
+const searchInput = document.getElementById('searchBar');
+const searchButton= document.getElementById('searchButton');
+
+
 
 // btnSiguiente.addEventListener('click', () => {
 //     if(pagina <1000){

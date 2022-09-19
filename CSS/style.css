@@ -27,7 +27,7 @@ body{
 .card-container img:hover{
     filter: grayscale(0);
     transform: scale(1.06);
-    transition: 0.7s;
+    transition: 0.7s ease-out;
 }
 
 .modal-container img{
