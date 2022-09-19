@@ -1,2 +1,2 @@
 # SmokeGames
-Estudy project about api behabior
+Estudy project about CRUD and api behabior
