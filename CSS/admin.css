@@ -1,0 +1,10 @@
+thead tbody{
+    display: flex;
+    flex-direction: column;
+}
+
+tbody tr:hover{
+    border: 2px solid red;
+    
+    transition: 0.5s;
+}
