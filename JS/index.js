@@ -7,6 +7,7 @@ const searchButton= document.getElementById('searchButton');
 
 
 
+
 // btnSiguiente.addEventListener('click', () => {
 //     if(pagina <1000){
 //         pagina += 1;
@@ -103,19 +104,19 @@ const renderGames = ()=>{
     })
 }
 
- renderGames()
+renderGames()
 
- const modalRender1 = (() =>{
-     juegos.slice(20, 26).forEach(juego =>{
-         const modalContainer = document.getElementById('modal1')
-         const modalCard = document.createElement('div')
-         modalCard.innerHTML=`
-         <img class="img-fluid" src="${juego.url}">
-         <h3 class="title">${juego.title}</h3>        
-         `;
-         modalContainer.appendChild(modalCard);
-    })
- })()
+const modalRender1 = (() =>{
+    juegos.slice(20, 26).forEach(juego =>{
+        const modalContainer = document.getElementById('modal1')
+        const modalCard = document.createElement('div')
+        modalCard.innerHTML=`
+        <img class="img-fluid" src="${juego.url}">
+        <h3 class="title">${juego.title}</h3>        
+        `;
+        modalContainer.appendChild(modalCard);
+   })
+})()
 
 const modalRender2 = (() =>{
     juegos.slice(5, 11).forEach(juego =>{
