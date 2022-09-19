@@ -1,6 +1,7 @@
 let pagina = 1;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
+const juegos = JSON.parse(localStorage.getItem('juegos')) || [];
 
 btnSiguiente.addEventListener('click', () => {
     if(pagina <1000){
@@ -18,34 +19,47 @@ btnAnterior.addEventListener('click', () => {
     }
 })
 
-const cargarJuegos = async() => {
-    try {
-        const respuesta = await fetch('https://my-json-server.typicode.com/qpmjcv/GamesApi/db');
-        console.log(respuesta);
-        if(respuesta.status === 200){
-            const datos = await respuesta.json();
+// const cargarJuegos = async() => {
+//     try {
+//         const respuesta = await fetch('https://my-json-server.typicode.com/qpmjcv/GamesApi/db');
+//         console.log(respuesta);
+//         if(respuesta.status === 200){
+//             const datos = await respuesta.json();
 
-            let juegos = '';
-            datos.juegos.forEach(juego => {
-                juegos += `
-                    <div class="juego">
-                        <img class="poster" src="${juego.url}">
-                        <h3 class="titulo">${juego.title}</h3>
-                    </div>    
-                    `;
+//             let juegos = '';
+//             datos.juegos.forEach(juego => {
+//                 juegos += `
+//                     <div class="juego">
+//                         <img class="poster" src="${juego.url}">
+//                         <h3 class="titulo">${juego.title}</h3>
+//                     </div>    
+//                     `;
                                
-            });
+//             });
 
-            document.getElementById('contenedor').innerHTML = juegos;
+//             document.getElementById('contenedor').innerHTML = juegos;
             
-        } else if(respuesta.status === 401, 402, 403, 404, 405){
-            console.log('El arreglo es demasiado largo');
-        }
+//         } else if(respuesta.status === 401, 402, 403, 404, 405){
+//             console.log('El arreglo es demasiado largo');
+//         }
 
-    } catch(error){
-        console.log(error);
-    }
+//     } catch(error){
+//         console.log(error);
+//     }
+// }
+
+// cargarJuegos();
+
+const renderGames = ()=>{
+    juegos.forEach(juego =>{
+        const contenedor = document.getElementById('contenedor');
+        const tarjeta = document.createElement('div')
+        tarjeta.innerHTML = `
+            <img class="img-fluid" src="${juego.url}">
+            <h3 class="title">${juego.title}</h3>        
+            `;
+        contenedor.appendChild(tarjeta)
+    })
 }
 
-cargarJuegos();
-
+renderGames()
