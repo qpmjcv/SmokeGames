@@ -50,17 +50,30 @@ function saveGame (e) {
     let url = document.getElementById('urlText').value;
     let description = document.getElementById('descriptionText').value;
     let id = (juegos.length + 1);
-    let datos = {
-        id,
-        title,
-        url,
-        date,
-        developer,
-        description,
+    if(!edit.state){
+        let datos = {
+            id,
+            title,
+            url,
+            date,
+            developer,
+            description,
+        };
+        juegos.push(datos);
+    } else{
+        juegos[edit.id].title = title;
+        juegos[edit.id].url = url;
+        juegos[edit.id].date = date;
+        juegos[edit.id].developer = developer;
+        juegos[edit.id].description = description;
     };
-    juegos.push(datos);
     localStorage.setItem("juegos", JSON.stringify(juegos));
+    document.getElementById('modalForm').reset();
     renderTable();
+    edit = {
+        state: false,
+        id: null
+    }
     myModal.hide();
 }
 
@@ -93,6 +106,7 @@ const editGame = (id) => {
         id: index,
     }
     openModal();
+    
 };
 
 function openModal (){
