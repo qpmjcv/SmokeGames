@@ -4,7 +4,7 @@ const tableBody = document.getElementById('tableBody');
 
 
 const myModal = new bootstrap.Modal(document.getElementById('modal'), {
-    keyboard: true,
+    keyboard: false,
     backdrop: "static",
 })
 
@@ -41,7 +41,6 @@ const renderTable = () => {
     })
 };
 
-document.getElementById('modalForm').addEventListener('submit', saveGame);
 function saveGame (e) {
     e.preventDefault();
     let title = document.getElementById('titleText').value;
@@ -112,3 +111,11 @@ const editGame = (id) => {
 function openModal (){
     myModal.show();
 };
+
+document.getElementById('modalForm').addEventListener('submit', saveGame);
+document.querySelector('#closeModal').addEventListener('click', () => {
+    document.getElementById('modalForm').reset();
+});
+document.querySelector('#bigCloseModal').addEventListener('click', () => {
+    document.getElementById('modalForm').reset();
+});
